@@ -1,0 +1,12 @@
+# Netlify Build Configuration
+# This file is the single source of truth for our build settings.
+
+[build]
+  # Tell Netlify to run commands from inside the "frontend" folder
+  base = "frontend"
+
+  # The command to build the site
+  command = "npm run build"
+
+  # The folder where the finished site is located
+  publish = "frontend/dist"
